@@ -1,0 +1,338 @@
+/* Incident Report Container */
+.incident-report-container {
+    padding: 40px 20px;
+    background-color: #4B2D3E; /* Purple background */
+    color: #E7DCC8; /* Cream text color */
+    font-family: 'Arial', sans-serif;
+    min-height: 100vh;
+  }
+  
+  /* Incident Reporting Section */
+  .incident-report-section {
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    padding: 30px 40px;
+    background-color: #3A1F2E; /* Slightly darker purple */
+    border-radius: 20px; /* Increased border-radius for more curved edges */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Enhanced box-shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .incident-report-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  }
+  
+  .incident-report-section h2 {
+    color: #D4A35A; /* Gold heading */
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  
+  .incident-form .form-group {
+    margin-bottom: 25px;
+  }
+  
+  .incident-form label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+  
+  .icon-label {
+    margin-right: 8px;
+    color: #D4A35A; /* Gold color for icons */
+  }
+  
+  .icon-classification {
+    margin-right: 8px;
+    color: #D4A35A; /* Gold color for icons */
+  }
+  
+  /* Textarea Styling */
+  .incident-form textarea {
+    height: 150px; /* Increased height for better fit */
+    resize: vertical;
+    background-color: #4B2D3E;
+    color: #E7DCC8;
+    border: 2px solid #D4A35A;
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .incident-form textarea:focus {
+    outline: none;
+    border-color: #A97C46;
+  }
+  
+  /* Select Box Styling */
+  .incident-form select {
+    background-color: #4B2D3E;
+    color: #E7DCC8;
+    border: 2px solid #D4A35A;
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .incident-form select:focus {
+    outline: none;
+    border-color: #A97C46;
+  }
+  
+  /* Range Slider Styling */
+  .incident-form input[type='range'] {
+    width: 100%;
+    margin-top: 10px;
+    accent-color: #D4A35A;
+  }
+  
+  .incident-form input[type='range']::-webkit-slider-thumb {
+    background-color: #D4A35A;
+    border: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .incident-form input[type='range']::-moz-range-thumb {
+    background-color: #D4A35A;
+    border: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Custom File Upload Styling */
+  .custom-file-upload {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .custom-file-upload input[type='file'] {
+    display: none;
+  }
+  
+  .file-upload-label {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 25px;
+    background-color: #D4A35A; /* Gold button */
+    color: #4B2D3E; /* Purple text */
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .file-upload-label:hover {
+    background-color: #A97C46; /* Darker gold on hover */
+    transform: translateY(-2px);
+  }
+  
+  .file-upload-label svg {
+    margin-right: 8px;
+  }
+  
+  /* Selected Files Display */
+  .selected-files {
+    margin-top: 10px;
+    font-size: 0.95rem;
+  }
+  
+  .selected-files p {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .selected-files ul {
+    list-style-type: disc;
+    margin-left: 25px;
+  }
+  
+  .selected-files li {
+    margin-bottom: 3px;
+  }
+  
+  /* Submit Button Styling */
+  .submit-button {
+    display: block;
+    width: 100%;
+    background-color: #D4A35A; /* Gold button */
+    color: #4B2D3E; /* Purple text on button */
+    padding: 15px 0;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #A97C46; /* Darker gold on hover */
+    transform: translateY(-5px);
+  }
+  
+  /* Classification Results Section */
+  .classification-results-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px 40px;
+    background-color: #3A1F2E; /* Slightly darker purple */
+    border-radius: 20px; /* Increased border-radius */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Enhanced box-shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .classification-results-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  }
+  
+  .classification-results-section h2 {
+    color: #D4A35A; /* Gold heading */
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  
+  .classification-content {
+    margin-bottom: 35px;
+  }
+  
+  .classification-item {
+    margin-bottom: 12px;
+    font-size: 1.15rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .classification-item strong {
+    margin-left: 8px;
+  }
+  
+  /* Severity Badges with Icons */
+  .severity-badge {
+    padding: 6px 12px;
+    border-radius: 20px;
+    color: #4B2D3E; /* Purple text */
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+  
+  /* Severity Levels */
+  .severity-1 {
+    background-color: #A8D5BA; /* Light green */
+  }
+  
+  .severity-2 {
+    background-color: #BFD8B8; /* Soft green */
+  }
+  
+  .severity-3 {
+    background-color: #F5B7B1; /* Light red */
+  }
+  
+  .severity-4 {
+    background-color: #F1948A; /* Coral */
+  }
+  
+  .severity-5 {
+    background-color: #E67E22; /* Orange */
+  }
+  
+  .severity-6 {
+    background-color: #D35400; /* Dark orange */
+  }
+  
+  .severity-7 {
+    background-color: #CD6155; /* Brick red */
+  }
+  
+  .severity-8 {
+    background-color: #C0392B; /* Dark red */
+  }
+  
+  .severity-9 {
+    background-color: #922B21; /* Maroon */
+  }
+  
+  .severity-10 {
+    background-color: #641E16; /* Deep maroon */
+  }
+  
+  /* Recommended Actions */
+  .recommended-actions h3 {
+    color: #D4A35A; /* Gold subheading */
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+  }
+  
+  .action-section {
+    margin-bottom: 25px;
+  }
+  
+  .action-section strong {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+  }
+  
+  .action-section p {
+    margin: 0;
+    line-height: 1.6;
+    font-size: 1rem;
+  }
+  
+  .action-section ul {
+    list-style-type: disc;
+    margin-left: 25px;
+    font-size: 1rem;
+  }
+  
+  .action-section li {
+    margin-bottom: 5px;
+  }
+  
+  .action-section a {
+    color: #D4A35A; /* Gold links */
+    text-decoration: underline;
+    transition: color 0.3s ease;
+  }
+  
+  .action-section a:hover {
+    color: #A97C46; /* Darker gold on hover */
+  }
+  
+  /* Animation for Sections */
+  .incident-report-section,
+  .classification-results-section {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s forwards;
+  }
+  
+  .classification-results-section {
+    animation-delay: 0.2s;
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

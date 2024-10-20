@@ -41,7 +41,8 @@ const Home = () => {
         <p>Empower yourself with knowledge and opportunities.</p>
         <div className="cta-buttons">
           <a href="/signup" className="cta-button">Join Now</a>
-          <a href="/chat" className="cta-button">Chat Now</a> {/* New Chat button */}
+          <a href="/chat" className="cta-button">Chat Now</a>
+          <a href="/incident-report" className="cta-button">Report Incident</a> {/* New Incident Report button */}
         </div>
       </section>
     </div>
