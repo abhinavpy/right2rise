@@ -1,0 +1,18 @@
+/* src/components/Footer.css */
+
+/* Footer Container */
+.footer {
+    background-color: #3A1F2E; /* Matching Navbar background */
+    color: #E7DCC8; /* Cream text color */
+    text-align: center;
+    padding: 20px 0;
+    border-top: 2px solid #D4A35A; /* Gold border */
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  }
+  
+  /* Footer Text */
+  .footer p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  

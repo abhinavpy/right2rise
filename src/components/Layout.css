@@ -1,0 +1,56 @@
+/* src/components/Layout.css */
+
+/* Ensure the Layout takes up the full viewport height */
+body, html, #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Layout Container */
+  .layout-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Main Content Area */
+  main {
+    flex: 1; /* Allows the main content to grow and fill available space */
+    background-color: #4B2D3E; /* Purple background matching other pages */
+    padding: 40px 20px; /* Consistent padding */
+    display: flex;
+    justify-content: center; /* Centers child content horizontally */
+    align-items: flex-start; /* Aligns child content to the top */
+  }
+  
+  /* Restrict the width of child components for better readability */
+  main > * {
+    width: 100%;
+    max-width: 800px; /* Consistent with other pages like About, Incident Report */
+  }
+  
+  /* Responsive Design Adjustments */
+  
+  /* Tablets and Small Screens */
+  @media (max-width: 768px) {
+    main {
+      padding: 30px 15px;
+    }
+  
+    main > * {
+      max-width: 700px;
+    }
+  }
+  
+  /* Mobile Devices */
+  @media (max-width: 480px) {
+    main {
+      padding: 20px 10px;
+    }
+  
+    main > * {
+      max-width: 100%;
+    }
+  }
+  

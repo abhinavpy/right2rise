@@ -28,6 +28,7 @@
     margin-bottom: 25px;
     text-align: center;
     font-size: 2.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Very soft shadow for headings */
   }
   
   .incident-form .form-group {
@@ -162,7 +163,7 @@
   }
   
   .selected-files li {
-    margin-bottom: 3px;
+    margin-bottom: 5px;
   }
   
   /* Submit Button Styling */
@@ -205,24 +206,33 @@
     margin-bottom: 25px;
     text-align: center;
     font-size: 2.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Very soft shadow for headings */
   }
   
   .classification-content {
     margin-bottom: 35px;
   }
   
+  /* Classification Item */
   .classification-item {
-    margin-bottom: 12px;
-    font-size: 1.15rem;
-    display: flex;
-    align-items: center;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
   }
   
-  .classification-item strong {
-    margin-left: 8px;
+  .classification-heading {
+    font-size: 1.4rem; /* Larger size for headings */
+    font-weight: 700; /* Bold weight */
+    margin-bottom: 5px;
+    text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.2); /* Very soft shadow for headings */
   }
   
-  /* Severity Badges with Icons */
+  .classification-response {
+    font-size: 1rem; /* Smaller size for response text */
+    font-weight: 400; /* Regular weight */
+    margin-left: 28px; /* Aligning response text properly */
+  }
+  
+  /* Severity Badges */
   .severity-badge {
     padding: 6px 12px;
     border-radius: 20px;

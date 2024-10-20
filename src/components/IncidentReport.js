@@ -62,19 +62,13 @@ const IncidentReport = () => {
     return <FaCheckCircle color="#27AE60" size={24} />;
   };
 
-  // Function to get category icon (generic for demo)
-  const getCategoryIcon = () => <MdCategory size={20} />;
-
-  // Function to get subcategory icon (generic for demo)
-  const getSubcategoryIcon = () => <MdSubdirectoryArrowRight size={20} />;
-
   return (
     <div className="incident-report-container">
       {/* Incident Reporting Section */}
       <section className="incident-report-section">
         <h2>Automated Incident Classification</h2>
         <form onSubmit={handleSubmit} className="incident-form">
-          {/* Text Box for User to Input Report */}
+          {/* Incident Report Textarea */}
           <div className="form-group">
             <label htmlFor="report"><FaShieldAlt className="icon-label" /> Incident Report</label>
             <textarea
@@ -160,24 +154,40 @@ const IncidentReport = () => {
         >
           <h2>Incident Classification</h2>
           <div className="classification-content">
+            {/* Category */}
             <div className="classification-item">
-              <MdCategory className="icon-classification" /> <strong>Category:</strong> {classification.category}
+              <MdCategory className="icon-classification" />
+              <div className="classification-heading">Category</div>
+              <div className="classification-response">{classification.category}</div>
             </div>
+
+            {/* Subcategories */}
             {classification.subcategories.length > 0 && (
               <div className="classification-item">
-                <MdSubdirectoryArrowRight className="icon-classification" /> <strong>Subcategories:</strong> {classification.subcategories.join(', ')}
+                <MdSubdirectoryArrowRight className="icon-classification" />
+                <div className="classification-heading">Subcategories</div>
+                <div className="classification-response">{classification.subcategories.join(', ')}</div>
               </div>
             )}
+
+            {/* Severity Level */}
             <div className="classification-item">
-              <FaExclamationTriangle className="icon-classification" /> <strong>Severity Level:</strong>{' '}
-              <span
-                className={`severity-badge severity-${classification.severityLevel}`}
-              >
-                {classification.severityLevel}
-              </span>
+              <FaExclamationTriangle className="icon-classification" />
+              <div className="classification-heading">Severity Level</div>
+              <div className="classification-response">
+                <span
+                  className={`severity-badge severity-${classification.severityLevel}`}
+                >
+                  {classification.severityLevel}
+                </span>
+              </div>
             </div>
+
+            {/* Priority Status */}
             <div className="classification-item">
-              <FaCheckCircle className="icon-classification" /> <strong>Priority Status:</strong> {classification.priorityStatus}
+              <FaCheckCircle className="icon-classification" />
+              <div className="classification-heading">Priority Status</div>
+              <div className="classification-response">{classification.priorityStatus}</div>
             </div>
           </div>
 

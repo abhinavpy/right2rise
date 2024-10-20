@@ -1,6 +1,8 @@
+// src/components/Home.js
 import React from 'react';
 import './Home.css';
-import logo from '../assets/right2rise-logo.jpg'; // Assuming you have your logo saved in the assets folder
+import logo from '../assets/right2rise-logo.jpg'; // Ensure you have the logo in assets
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
@@ -15,7 +17,9 @@ const Home = () => {
         <div className="hero-content">
           <h1>Right2Rise</h1>
           <p>Your legal and economic empowerment starts here.</p>
-          <a href="/signup" className="cta-button">Get Started</a>
+          <Link to="/signup" className="cta-button">
+            Get Started
+          </Link>
         </div>
       </section>
 
@@ -40,9 +44,15 @@ const Home = () => {
         <h2>Join Right2Rise Today</h2>
         <p>Empower yourself with knowledge and opportunities.</p>
         <div className="cta-buttons">
-          <a href="/signup" className="cta-button">Join Now</a>
-          <a href="/chat" className="cta-button">Chat Now</a>
-          <a href="/incident-report" className="cta-button">Report Incident</a> {/* New Incident Report button */}
+          <Link to="/signup" className="cta-button">
+            Join Now
+          </Link>
+          <Link to="/chat" className="cta-button">
+            Chat Now
+          </Link>
+          <Link to="/incident-report" className="cta-button">
+            Report Incident
+          </Link>
         </div>
       </section>
     </div>
