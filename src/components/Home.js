@@ -39,7 +39,10 @@ const Home = () => {
       <section className="cta-section">
         <h2>Join Right2Rise Today</h2>
         <p>Empower yourself with knowledge and opportunities.</p>
-        <a href="/signup" className="cta-button">Join Now</a>
+        <div className="cta-buttons">
+          <a href="/signup" className="cta-button">Join Now</a>
+          <a href="/chat" className="cta-button">Chat Now</a> {/* New Chat button */}
+        </div>
       </section>
     </div>
   );

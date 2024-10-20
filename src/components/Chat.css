@@ -1,0 +1,95 @@
+/* Chat Container */
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #4B2D3E; /* Purple background */
+    color: #E7DCC8; /* Cream text color */
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Chat Header */
+  .chat-header {
+    padding: 20px;
+    background-color: #4B2D3E;
+    border-bottom: 1px solid #D4A35A; /* Gold border */
+    text-align: center;
+  }
+  
+  .chat-header h2 {
+    margin: 0;
+    color: #D4A35A; /* Gold text */
+  }
+  
+  /* Messages Area */
+  .chat-messages {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #3A1F2E; /* Slightly darker purple for messages area */
+  }
+  
+  .message {
+    margin-bottom: 15px;
+    display: flex;
+  }
+  
+  .message.bot {
+    justify-content: flex-start;
+  }
+  
+  .message.user {
+    justify-content: flex-end;
+  }
+  
+  .message-content {
+    max-width: 60%;
+    padding: 10px 15px;
+    border-radius: 20px;
+    background-color: #D4A35A; /* Gold background for bot messages */
+    color: #4B2D3E; /* Purple text for bot messages */
+  }
+  
+  .message.user .message-content {
+    background-color: #E7DCC8; /* Cream background for user messages */
+    color: #4B2D3E; /* Purple text for user messages */
+  }
+  
+  /* Input Area */
+  .chat-input-area {
+    display: flex;
+    padding: 20px;
+    background-color: #4B2D3E;
+    border-top: 1px solid #D4A35A; /* Gold border */
+  }
+  
+  .chat-input {
+    flex: 1;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 30px;
+    margin-right: 10px;
+    font-size: 1rem;
+  }
+  
+  .chat-input:focus {
+    outline: none;
+    box-shadow: 0 0 5px #D4A35A;
+  }
+  
+  .send-button {
+    background-color: #D4A35A; /* Gold button */
+    color: #4B2D3E; /* Purple text on button */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .send-button:hover {
+    background-color: #A97C46; /* Darker gold on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+  }
+  

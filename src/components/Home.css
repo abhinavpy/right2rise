@@ -110,6 +110,12 @@ body {
     color: #E7DCC8;
   }
   
+  .cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between buttons */
+  }
+  
   .cta-section .cta-button {
     font-size: 1.3rem;
     background-color: #D4A35A;
