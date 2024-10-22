@@ -55,21 +55,24 @@
   
   /* Textarea Styling */
   .incident-form textarea {
-    height: 150px; /* Increased height for better fit */
-    resize: vertical;
+    width: 100%; /* Make the textarea fill the width of the form */
+    min-height: 150px; /* Set a reasonable minimum height */
+    max-width: 100%; /* Prevent overflowing horizontally */
     background-color: #4B2D3E;
     color: #E7DCC8;
     border: 2px solid #D4A35A;
     border-radius: 10px;
     padding: 12px;
     font-size: 1rem;
+    resize: vertical; /* Allow vertical resizing */
     transition: border-color 0.3s ease;
-  }
-  
-  .incident-form textarea:focus {
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.incident-form textarea:focus {
     outline: none;
     border-color: #A97C46;
-  }
+}
   
   /* Select Box Styling */
   .incident-form select {
