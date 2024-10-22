@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+/* src/App.css */
+
+/* Define CSS Variables for the Color Scheme */
+:root {
+  /* Primary Colors */
+  --color-primary: #3A1F2E;       /* Slightly darker purple */
+  --color-secondary: #4B2D3E;     /* Purple background */
+  --color-gold: #D4A35A;          /* Gold color */
+  --color-light-gold: #F7DC6F;    /* Lighter gold for hover effects */
+  --color-cream: #E7DCC8;         /* Cream text color */
+  --color-error: #E74C3C;         /* Red for errors */
+
+  /* Additional Colors */
+  --color-dark-gold: #A97C46;     /* Darker gold for hover and active states */
+  --color-white: #FFFFFF;         /* White color */
+  --color-black: #000000;         /* Black color */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Apply Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: var(--color-secondary); /* Use secondary color as background */
+  color: var(--color-cream);               /* Use cream for default text */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Utility Classes (Optional) */
+.text-primary {
+  color: var(--color-primary);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.text-gold {
+  color: var(--color-gold);
 }
 
-.App-link {
-  color: #61dafb;
+.bg-primary {
+  background-color: var(--color-primary);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bg-secondary {
+  background-color: var(--color-secondary);
 }
+
+.button-primary {
+  background-color: var(--color-gold);
+  color: var(--color-primary);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button-primary:hover {
+  background-color: var(--color-dark-gold);
+  transform: translateY(-2px);
+}
+
+/* Add any additional global styles below */

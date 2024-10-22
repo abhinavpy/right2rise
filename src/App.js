@@ -1,10 +1,11 @@
-// src/App.js
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './components/Home';
 import About from './components/About';
 import Chat from './components/Chat';
 import IncidentReport from './components/IncidentReport';
-import Layout from './components/Layout'; // Import Layout component
+import SmartResourceLocator from './components/SmartResourceLocator'; // Import the new component
+import Layout from './components/Layout';
+import NotFound from './components/NotFound'; // If you have a NotFound component
 
 function App() {
   return (
@@ -18,11 +19,12 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="chat" element={<Chat />} />
           <Route path="incident-report" element={<IncidentReport />} />
+          <Route path="resource-locator" element={<SmartResourceLocator />} /> {/* New Route */}
           {/* Add more routes here as needed */}
         </Route>
 
-        {/* Optional: Add a NotFound component for undefined routes */}
-        {/* <Route path="*" element={<NotFound />} /> */}
+        {/* NotFound Route */}
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   );

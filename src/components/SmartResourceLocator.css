@@ -1,0 +1,214 @@
+/* src/components/SmartResourceLocator.css */
+
+.resource-locator-container {
+    background-color: #4B2D3E; /* Purple background matching other pages */
+    color: #E7DCC8; /* Cream text color */
+    padding: 40px 20px;
+    min-height: 80vh;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .resource-locator-container h1 {
+    font-size: 2.5rem;
+    color: #D4A35A; /* Gold heading */
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .resource-locator-container p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    text-align: center;
+    max-width: 700px;
+  }
+  
+  .cta-button.locate-button {
+    background-color: #D4A35A; /* Gold button */
+    color: #4B2D3E; /* Purple text on button */
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-bottom: 30px;
+  }
+  
+  .cta-button.locate-button:hover {
+    background-color: #A97C46; /* Darker gold on hover */
+    transform: translateY(-3px);
+  }
+  
+  .error-message {
+    color: #E74C3C; /* Red color for errors */
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .location-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .location-icon {
+    color: #D4A35A; /* Gold color */
+    margin-right: 10px;
+    font-size: 1.5rem;
+  }
+  
+  .resources-list {
+    width: 100%;
+    max-width: 800px;
+    background-color: #3A1F2E; /* Slightly darker purple */
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .resources-list h2 {
+    font-size: 2rem;
+    color: #D4A35A; /* Gold heading */
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .resources-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .resource-item {
+    display: flex;
+    align-items: center;
+    background-color: #4B2D3E; /* Matching main background */
+    padding: 15px 20px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .resource-item:hover {
+    background-color: #3A1F2E; /* Slightly darker on hover */
+    transform: translateY(-2px);
+  }
+  
+  .resource-icon {
+    color: #D4A35A; /* Gold color */
+    font-size: 1.5rem;
+    margin-right: 15px;
+  }
+  
+  .resource-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .resource-details h3 {
+    font-size: 1.3rem;
+    color: #F7DC6F; /* Lighter gold for subheadings */
+    margin: 0 0 5px 0;
+  }
+  
+  .resource-details p {
+    font-size: 1rem;
+    margin: 0 0 5px 0;
+  }
+  
+  .resource-type {
+    background-color: #A97C46; /* Darker gold for labels */
+    color: #FFFFFF;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    display: inline-block;
+  }
+  
+  .no-resources-message {
+    font-size: 1rem;
+    color: #F7DC6F; /* Lighter gold color */
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .resource-locator-container {
+      padding: 30px 15px;
+    }
+  
+    .resource-locator-container h1 {
+      font-size: 2rem;
+    }
+  
+    .resource-locator-container p {
+      font-size: 1rem;
+      max-width: 600px;
+    }
+  
+    .cta-button.locate-button {
+      padding: 10px 20px;
+      font-size: 1rem;
+    }
+  
+    .resource-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .resource-icon {
+      margin-bottom: 10px;
+    }
+  
+    .resource-details h3 {
+      font-size: 1.1rem;
+    }
+  
+    .resource-details p,
+    .resource-type {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .resource-locator-container {
+      padding: 20px 10px;
+    }
+  
+    .resource-locator-container h1 {
+      font-size: 1.8rem;
+    }
+  
+    .resource-locator-container p {
+      font-size: 0.95rem;
+      max-width: 100%;
+    }
+  
+    .cta-button.locate-button {
+      padding: 8px 15px;
+      font-size: 0.9rem;
+    }
+  
+    .resource-item {
+      padding: 10px 15px;
+    }
+  
+    .resource-icon {
+      font-size: 1.2rem;
+      margin-bottom: 8px;
+    }
+  
+    .resource-details h3 {
+      font-size: 1rem;
+    }
+  
+    .resource-details p,
+    .resource-type {
+      font-size: 0.85rem;
+    }
+  }
+  

@@ -1,7 +1,6 @@
-// src/components/Navbar.js
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import './Navbar.css'; // Import the corresponding CSS
+import './Navbar.css';
 import logo from '../assets/right2rise-logo.jpg'; // Use SVG for scalability; replace with .jpg/.png if necessary
 
 const Navbar = () => {
@@ -27,6 +26,12 @@ const Navbar = () => {
           className={`nav-link ${location.pathname === '/incident-report' ? 'active' : ''}`}
         >
           Report Incident
+        </Link>
+        <Link
+          to="/resource-locator"
+          className={`nav-link ${location.pathname === '/resource-locator' ? 'active' : ''}`}
+        >
+          Resource Locator
         </Link>
       </nav>
     </header>
