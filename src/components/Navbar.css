@@ -2,107 +2,106 @@
 
 /* Navbar Container */
 .navbar-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px 40px; /* Adjusted padding for better spacing */
-    background-color: #3A1F2E; /* Slightly darker purple */
-    border-bottom: 2px solid #D4A35A; /* Gold border */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px; /* Adjusted padding for better spacing */
+  background-color: #3A1F2E; /* Slightly darker purple */
+  border-bottom: 2px solid #D4A35A; /* Gold border */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Logo Styling */
+.navbar-logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  width: 80px; /* Reduced width from previous 100px */
+  height: auto;
+  transition: width 0.3s ease; /* Smooth transition on resize */
+}
+
+/* Navigation Links Container */
+.navbar-nav {
+  display: flex;
+  align-items: flex-start; /* Align links to the top */
+  gap: 25px; /* Spacing between links */
+  flex-direction: row !important; /* Ensure row direction */
+}
+
+/* Individual Navigation Links */
+.nav-link {
+  color: #D4A35A; /* Gold color for unselected links */
+  font-size: 1rem;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
+  padding: 5px 0; /* Added padding for better click area */
+}
+
+/* Hover Effect for Links */
+.nav-link:hover {
+  color: #F7DC6F; /* Lighter gold on hover */
+}
+
+/* Active Link Styling */
+.nav-link.active {
+  font-weight: bold; /* Bold text */
+  color: #D4A35A; /* Gold color */
+  transform: translateY(-2px); /* Slightly elevate the text */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Soft shadow */
+}
+
+/* Optional: Underline for Active Links */
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #D4A35A;
+  bottom: -5px;
+  left: 0;
+}
+
+/* Responsive Design */
+
+/* Tablets and Small Screens */
+@media (max-width: 768px) {
+  .navbar-header {
+    align-items: flex-start;
+    padding: 15px 20px;
   }
-  
-  /* Logo Styling */
-  .navbar-logo-container {
-    display: flex;
-    align-items: center;
-  }
-  
-  .navbar-logo {
-    width: 80px; /* Reduced width from previous 100px */
-    height: auto;
-    transition: width 0.3s ease; /* Smooth transition on resize */
-  }
-  
-  /* Navigation Links Container */
+
   .navbar-nav {
-    display: flex;
-    align-items: left;
-    flex-direction: row; /* Ensure horizontal alignment */
-    gap: 25px; /* Spacing between links */
+    flex-direction: row !important; /* Maintain horizontal layout */
+    flex-wrap: wrap; /* Allow wrapping if needed */
+    gap: 15px; /* Reduced gap for smaller screens */
+    margin-top: 10px;
   }
-  
-  /* Individual Navigation Links */
+
+  .navbar-logo {
+    width: 70px; /* Further reduce width on tablets */
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+  .navbar-header {
+    padding: 10px 15px;
+  }
+
+  .navbar-nav {
+    flex-direction: row !important; /* Ensure horizontal layout on mobile */
+    gap: 10px; /* Further reduced gap on mobile */
+  }
+
+  .navbar-logo {
+    width: 60px; /* Further reduce width on mobile devices */
+  }
+
   .nav-link {
-    color: #D4A35A; /* Gold color for unselected links */
-    font-size: 1rem;
-    text-decoration: none;
-    position: relative;
-    transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
-    padding: 5px 0; /* Added padding for better click area */
+    font-size: 0.9rem; /* Slightly smaller text on mobile */
   }
-  
-  /* Hover Effect for Links */
-  .nav-link:hover {
-    color: #F7DC6F; /* Lighter gold on hover */
-  }
-  
-  /* Active Link Styling */
-  .nav-link.active {
-    font-weight: bold; /* Bold text */
-    color: #D4A35A; /* Gold color */
-    transform: translateY(-2px); /* Slightly elevate the text */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Soft shadow */
-  }
-  
-  /* Optional: Underline for Active Links */
-  .nav-link.active::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: #D4A35A;
-    bottom: -5px;
-    left: 0;
-  }
-  
-  /* Responsive Design */
-  
-  /* Tablets and Small Screens */
-  @media (max-width: 768px) {
-    .navbar-header {
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 15px 20px;
-    }
-  
-    .navbar-nav {
-      flex-direction: row; /* Maintain horizontal layout */
-      flex-wrap: wrap; /* Allow wrapping if needed */
-      gap: 15px; /* Reduced gap for smaller screens */
-      margin-top: 10px;
-    }
-  
-    .navbar-logo {
-      width: 70px; /* Further reduce width on tablets */
-    }
-  }
-  
-  /* Mobile Devices */
-  @media (max-width: 480px) {
-    .navbar-header {
-      padding: 10px 15px;
-    }
-  
-    .navbar-nav {
-      gap: 10px; /* Further reduced gap on mobile */
-    }
-  
-    .navbar-logo {
-      width: 60px; /* Further reduce width on mobile devices */
-    }
-  
-    .nav-link {
-      font-size: 0.9rem; /* Slightly smaller text on mobile */
-    }
-  }
-  
+}
