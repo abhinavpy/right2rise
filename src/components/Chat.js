@@ -33,7 +33,7 @@ const Chat = () => {
     <div className="chat-container">
       {/* Chat Header */}
       <header className="chat-header">
-        <h2>Chat with Right2Rise</h2>
+        <h2>Chat with Right2Rise - LegalAssistant</h2>
       </header>
 
       {/* Messages Area */}

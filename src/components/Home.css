@@ -43,13 +43,15 @@ body {
   }
   
   .hero h1 {
-    font-size: 4rem;
+    font-size: 5rem;
+    font-family: 'Playfair Display', serif;
     margin-bottom: 20px;
     color: #D4A35A; /* Gold heading */
   }
   
   .hero p {
     font-size: 1.5rem;
+    font-family: 'Lora', serif;
     margin-bottom: 40px;
     max-width: 600px;
   }
@@ -82,11 +84,13 @@ body {
   
   .feature h2 {
     color: #D4A35A; /* Gold headings */
+    font-family: 'Playfair Display', serif;
     margin-bottom: 10px;
   }
   
   .feature p {
     color: #E7DCC8; /* Cream text */
+    font-family: 'Lora', serif;
     font-size: 1.2rem;
     line-height: 1.5;
   }
@@ -100,12 +104,14 @@ body {
   
   .cta-section h2 {
     font-size: 2.5rem;
+    font-family: 'Playfair Display', serif;
     margin-bottom: 20px;
     color: #D4A35A; /* Gold headings */
   }
   
   .cta-section p {
     font-size: 1.3rem;
+    font-family: 'Lora', serif;
     margin-bottom: 30px;
     color: #E7DCC8;
   }
@@ -118,6 +124,7 @@ body {
   
   .cta-section .cta-button {
     font-size: 1.3rem;
+    font-family: 'Lora', serif;
     background-color: #D4A35A;
     color: #4B2D3E;
   }

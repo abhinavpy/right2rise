@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './Navbar.css';
-import logo from '../assets/right2rise-logo.jpg'; // Use SVG for scalability; replace with .jpg/.png if necessary
+import logo from '../assets/right2rise-logo.svg'; // Consider using SVG for scalability
 
 const Navbar = () => {
   const location = useLocation();
@@ -21,16 +21,10 @@ const Navbar = () => {
         <Link to="/chat" className={`nav-link ${location.pathname === '/chat' ? 'active' : ''}`}>
           Chat
         </Link>
-        <Link
-          to="/incident-report"
-          className={`nav-link ${location.pathname === '/incident-report' ? 'active' : ''}`}
-        >
+        <Link to="/incident-report" className={`nav-link ${location.pathname === '/incident-report' ? 'active' : ''}`}>
           Report Incident
         </Link>
-        <Link
-          to="/resource-locator"
-          className={`nav-link ${location.pathname === '/resource-locator' ? 'active' : ''}`}
-        >
+        <Link to="/resource-locator" className={`nav-link ${location.pathname === '/resource-locator' ? 'active' : ''}`}>
           Resource Locator
         </Link>
       </nav>

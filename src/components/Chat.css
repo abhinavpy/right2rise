@@ -18,6 +18,7 @@
   
   .chat-header h2 {
     margin: 0;
+    font-family: 'Playfair Display', serif;
     color: #D4A35A; /* Gold text */
   }
   
@@ -25,6 +26,7 @@
   .chat-messages {
     flex: 1;
     padding: 20px;
+    font-family: 'Lora', serif;
     overflow-y: auto;
     background-color: #3A1F2E; /* Slightly darker purple for messages area */
   }
@@ -70,6 +72,7 @@
     border-radius: 30px;
     margin-right: 10px;
     font-size: 1rem;
+    font-family: 'Lora', serif;
   }
   
   .chat-input:focus {
@@ -85,6 +88,7 @@
     border-radius: 30px;
     cursor: pointer;
     font-size: 1rem;
+    font-family: 'Lora', serif;
     transition: background-color 0.3s ease, transform 0.3s ease;
   }
   

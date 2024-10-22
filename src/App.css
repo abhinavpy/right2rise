@@ -1,5 +1,7 @@
 /* src/App.css */
 
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
+
 /* Define CSS Variables for the Color Scheme */
 :root {
   /* Primary Colors */
@@ -14,47 +16,65 @@
   --color-dark-gold: #A97C46;     /* Darker gold for hover and active states */
   --color-white: #FFFFFF;         /* White color */
   --color-black: #000000;         /* Black color */
+
+  /* Typography */
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Lora', serif;
+  --font-fancy: 'Great Vibes', cursive;
+  --font-sans: 'Raleway', sans-serif;
 }
 
-/* Apply Global Styles */
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Arial', sans-serif;
-  background-color: var(--color-secondary); /* Use secondary color as background */
-  color: var(--color-cream);               /* Use cream for default text */
-}
-
-/* Utility Classes (Optional) */
-.text-primary {
-  color: var(--color-primary);
-}
-
-.text-gold {
-  color: var(--color-gold);
-}
-
-.bg-primary {
-  background-color: var(--color-primary);
-}
-
-.bg-secondary {
+  font-family: var(--font-body); /* Apply body font globally */
   background-color: var(--color-secondary);
+  color: var(--color-cream);
 }
 
-.button-primary {
-  background-color: var(--color-gold);
-  color: var(--color-primary);
-  border: none;
-  padding: 10px 20px;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading); /* Apply heading font */
+  color: var(--color-gold);        /* Gold color for headings */
+  margin: 0 0 15px 0;
 }
 
-.button-primary:hover {
-  background-color: var(--color-dark-gold);
-  transform: translateY(-2px);
+h1 {
+  font-size: var(--font-size-xxlarge);
+  line-height: var(--line-height-loose);
 }
 
-/* Add any additional global styles below */
+h2 {
+  font-size: var(--font-size-xlarge);
+  line-height: var(--line-height-normal);
+}
+
+h3 {
+  font-size: var(--font-size-large);
+  line-height: var(--line-height-normal);
+}
+
+/* Paragraphs */
+p {
+  font-family: var(--font-body);
+  font-size: var(--font-size-medium);
+  line-height: var(--line-height-normal);
+  margin: 0 0 15px 0;
+}
+
+/* Links */
+a {
+  color: var(--color-gold);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--color-light-gold);
+}
+
+/* Buttons */
+button, .cta-button {
+  font-family: var(--font-body);
+  font-size: var(--font-size-medium);
+}

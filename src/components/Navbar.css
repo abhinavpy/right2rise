@@ -26,6 +26,7 @@
   /* Navigation Links Container */
   .navbar-nav {
     display: flex;
+    align-items: left;
     flex-direction: row; /* Ensure horizontal alignment */
     gap: 25px; /* Spacing between links */
   }
