@@ -5,6 +5,7 @@ import Chat from './components/Chat';
 import IncidentReport from './components/IncidentReport';
 import SmartResourceLocator from './components/SmartResourceLocator'; // Import the new component
 import Layout from './components/Layout';
+import Dashboard from './components/Dashboard'; // Import Dashboard component
 import NotFound from './components/NotFound'; // If you have a NotFound component
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
 
         {/* Other Routes - Wrapped with Layout */}
         <Route path="/" element={<Layout />}>
+          <Route path="dashboard" element={<Dashboard />} /> {/* New Dashboard Route */}
           <Route path="about" element={<About />} />
           <Route path="chat" element={<Chat />} />
           <Route path="incident-report" element={<IncidentReport />} />
