@@ -56,6 +56,15 @@
     background-color: #E7DCC8; /* Cream background for user messages */
     color: #4B2D3E; /* Purple text for user messages */
   }
+
+  /* Gemini container */
+  .gemini-container {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+  }
+
   
   /* Input Area */
   .chat-input-area {
