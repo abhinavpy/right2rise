@@ -3,41 +3,16 @@ import './Chat.css';
 import { Stack, Typography, Tooltip, Link } from '@mui/material';
 import InfoRoundedIcon from '@mui/icons-material/InfoRounded';
 import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
-import { useTheme } from '@mui/material/styles';
 import ReactMarkdown from 'react-markdown';
-
-// Reusing the GenerateWithGemini component from the provided code
-const GenerateWithGemini = ({ prompt }) => {
-  const theme = useTheme();
-
-  return (
-    <Stack direction={'row'} spacing={1} alignItems={'center'}>
-      <AutoAwesomeIcon style={{ fontSize: '1rem' }} />
-      <Typography variant="caption">
-        Generated with{' '}
-        <Link
-          style={{ color: '#D4A35A' }} // Set to gold color
-          href="https://gemini.google.com"
-          target="_blank"
-        >
-          Gemini
-        </Link>
-      </Typography>
-      <Tooltip
-        sx={{ cursor: 'pointer' }}
-        title={<ReactMarkdown children={prompt} />}
-        placement="top"
-        arrow
-      >
-        <InfoRoundedIcon style={{ fontSize: '1rem', color: '#E7DCC8' }} /> {/* Icon color changed to cream */}
-      </Tooltip>
-    </Stack>
-  );
-};
+import GenerateWithGemini from './GenerateWithGemini'; // Ensure correct path
 
 const Chat = () => {
   const [messages, setMessages] = useState([
-    { sender: 'bot', text: 'Hello! How can I assist you today?', prompt: 'This message is generated to assist you with general inquiries.' },
+    { 
+      sender: 'bot', 
+      text: 'Hello! How can I assist you today?', 
+      prompt: 'This message is generated to assist you with general inquiries.' 
+    },
   ]);
   const [input, setInput] = useState('');
 

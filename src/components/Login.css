@@ -1,0 +1,118 @@
+/* Login.css */
+
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #4B2D3E; /* Purple background */
+    color: #E7DCC8; /* Cream text color */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Container for the Login Page */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(75, 45, 62, 0.9), rgba(75, 45, 62, 0.7)), url('https://example.com/login-background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Logo Section */
+.logo-header {
+    padding: 20px;
+    background-color: rgba(75, 45, 62, 0.8); /* Semi-transparent purple */
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.logo {
+    width: 180px;
+    height: auto;
+}
+
+/* Login Box */
+.login-box {
+    background-color: rgba(75, 45, 62, 0.8); /* Semi-transparent purple */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 300px;
+}
+
+/* Login Heading */
+.login-box h2 {
+    font-size: 2rem;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px;
+    color: #D4A35A; /* Gold heading */
+}
+
+/* Google Login Button Container */
+.google-login-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #D4A35A; /* Gold background */
+    color: #4B2D3E; /* Purple text */
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.google-login-button:hover {
+    background-color: #A97C46; /* Darker gold on hover */
+    transform: translateY(-3px); /* Slight lift on hover */
+    font-family: 'Playfair Display', serif;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .login-box {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .login-box h2 {
+        font-size: 1.5rem;
+    }
+
+    .google-login-button {
+        width: 100%;
+        padding: 12px 0;
+    }
+}
+
+/* Animation */
+.login-container {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Add to Login.css */
+
+/* Error Message Styling */
+.error-message {
+    color: #FF6B6B; /* Red color for errors */
+    background-color: rgba(255, 107, 107, 0.2); /* Light red background */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-family: 'Lora', serif;
+}

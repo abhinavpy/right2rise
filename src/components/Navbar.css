@@ -106,3 +106,25 @@
     font-size: 0.9rem; /* Slightly smaller text on mobile */
   }
 }
+
+.user-info {
+  margin-left: 20px;
+  font-family: 'Lora', serif;
+  color: #E7DCC8;
+}
+
+/* Navbar.css */
+
+/* Existing Styles */
+/* ... existing navbar styles ... */
+
+/* Logout Link Specific Styling */
+.navbar-nav .logout-link {
+  color: #FF6B6B; /* Red color to indicate logout */
+  font-weight: bold;
+}
+
+.navbar-nav .logout-link:hover {
+  color: #FF4B4B; /* Darker red on hover */
+  text-decoration: underline;
+}
