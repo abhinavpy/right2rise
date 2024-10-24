@@ -106,3 +106,56 @@
     transform: translateY(-2px); /* Slight lift on hover */
   }
   
+
+.send-button:disabled {
+    background-color: #a0c4e8;
+    cursor: not-allowed;
+}
+
+.error-message {
+    color: #FF6B6B;
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Lora', serif;
+}
+
+/* Styling for Markdown elements */
+.message-content h1,
+.message-content h2,
+.message-content h3,
+.message-content h4,
+.message-content h5,
+.message-content h6 {
+    margin: 10px 0;
+}
+
+.message-content p {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.message-content ul,
+.message-content ol {
+    margin: 10px 0 10px 20px;
+}
+
+.message-content li {
+    margin: 5px 0;
+}
+
+.message-content strong {
+    font-weight: bold;
+}
+
+.message-content em {
+    font-style: italic;
+}
+
+.message-content a {
+    color: #4a90e2;
+    text-decoration: none;
+}
+
+.message-content a:hover {
+    text-decoration: underline;
+}
