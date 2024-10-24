@@ -17,7 +17,7 @@ const Home = () => {
         <div className="hero-content">
           <h1>Right2Rise</h1>
           <p>Your legal and economic empowerment starts here.</p>
-          <Link to="/signup" className="cta-button">
+          <Link to="/login" className="cta-button">
             Get Started
           </Link>
         </div>
@@ -44,7 +44,7 @@ const Home = () => {
         <h2>Join Right2Rise Today</h2>
         <p>Empower yourself with knowledge and opportunities.</p>
         <div className="cta-buttons">
-          <Link to="/signup" className="cta-button">
+          <Link to="/login" className="cta-button">
             Join Now
           </Link>
           <Link to="/chat" className="cta-button">
